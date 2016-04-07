@@ -33,7 +33,7 @@ Bundle 'Townk/vim-autoclose'
 Bundle 'lilydjwg/colorizer'
 
 " Sublime Text style multiple selections for Vim
-Bundle 'terryna/vim-multiple-cursors'
+Bundle 'terryma/vim-multiple-cursors'
 
 " Scala syntax highlight, https://github.com/derekwyatt/vim-scala
 Bundle 'derekwyatt/vim-scala'
@@ -287,8 +287,8 @@ autocmd BufEnter *.md exe 'noremap <F6> :!open -a "Google Chrome.app" %:p<CR>'
 " Open NERDTree on the right side
 let g:NERDTreeWinPos="right"
 " Open a NERDTree automatically when vim starts up
-autocmd vimenter * NERDTree
-autocmd VimEnter * wincmd p
+"## autocmd vimenter * NERDTree
+"## autocmd VimEnter * wincmd p
 " Open NERDTree with Ctrl+t
 map <C-t> :NERDTreeToggle<CR>
 " Do not shhow these file types
@@ -312,7 +312,7 @@ let g:airline#extensions#whitespace#enabled = 0
 " =====================================
 
 " Inddent Guides
-let g:indent_guides_enable_on_vim_startup=1
+"## let g:indent_guides_enable_on_vim_startup=1
 let g:indent_guides_auto_colors=1
 " let g:indent_guides_auto_colors = 0
 " autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=grey   ctermbg=3
