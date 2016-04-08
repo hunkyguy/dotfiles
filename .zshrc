@@ -8,4 +8,5 @@ do
     source $sf; 
 done
 setopt AUTO_CD
+setopt NO_HUP
 export PATH=$PATH:/usr/local/bin:/usr/local/sbin:/usr/local/ss-bash
