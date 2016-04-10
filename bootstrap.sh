@@ -13,12 +13,16 @@ do
 
     # files
     if [ ! -d $sf ]; then
-        [[ -e ~/$bname ]] && mv -f ~/$bname ~/$oname
+        [ -e ~/$bname ] && mv -f ~/$bname ~/$oname
         ln -s $sf ~/$bname
     fi
     # directories
-    if [[ $bname == ".vim" ]]; then
-        [[ -e ~/$bname ]] && mv -f ~/$bname ~/$oname
+    if [ $bname = ".vim" ]; then
+        [ -e ~/$bname ] && mv -f ~/$bname ~/$oname
         ln -s $sf ~/$bname
     fi
 done
+
+# Install vim plugins
+git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+vim +PluginInstall +qall
