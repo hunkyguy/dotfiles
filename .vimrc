@@ -113,8 +113,8 @@ autocmd BufReadPost *
     \ endif
 
 " Centralize bakups, swapfiles and undo history
-set backupdir=~/.vim/dirs/backups
-set directory=~/.vim/dirs/swaps
+set backupdir=~/.vim/dirs/backup
+set directory=~/.vim/dirs/swap
 if exists("&undodir")
     set undodir=~/.vim/dirs/undo
 endif
